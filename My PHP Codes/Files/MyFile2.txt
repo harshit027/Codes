@@ -1,0 +1,2 @@
+This data is written through fputs().
+Courtesy Harshit.<br>
