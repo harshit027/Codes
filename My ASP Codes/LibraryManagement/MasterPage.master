@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body link="yellow" alink="yellow" vlink="yellow">
+    <form id="form1" runat="server">
+    <div style="width: 100%; height: 580px;">
+        <div style="width: 100%; height: 50px; background-color: #222222; color: #ffffff;
+            text-align: center;">
+            <h2>
+                <u>UNIVERSAL LIBRARY</u></h2>
+        </div>
+        <div style="width: 100%; height: 500px; background-color: #eeeeee;">
+            <table width="100%" border="0">
+                <tr>
+                    <td valign="top" style="background-color: #0077ff;" colspan="2">
+                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="#F7F6F3"
+                            DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#7C6F57"
+                            StaticSubMenuIndent="10px">
+                            <StaticSelectedStyle BackColor="#5D7B9D" />
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                            <DynamicMenuStyle BackColor="#F7F6F3" />
+                            <DynamicSelectedStyle BackColor="#5D7B9D" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                            <Items>
+                                <asp:MenuItem Text="Home" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Books">
+                                    <asp:MenuItem Text="New" NavigateUrl="~/NewBook.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Update" >
+                                    <asp:MenuItem Text="Title" NavigateUrl="~/UpdateBook.aspx?var=title"></asp:MenuItem>
+                                    <asp:MenuItem Text="Author" NavigateUrl="~/UpdateBook.aspx?var=author"></asp:MenuItem>
+                                    <asp:MenuItem Text="Price" NavigateUrl="~/UpdateBook.aspx?var=price"></asp:MenuItem>
+                                    <asp:MenuItem Text="Publisher" NavigateUrl="~/UpdateBook.aspx?var=publisher"></asp:MenuItem>
+                                    <asp:MenuItem Text="Edition" NavigateUrl="~/UpdateBook.aspx?var=edition"></asp:MenuItem>
+                                    <asp:MenuItem Text="Quantity" NavigateUrl="~/UpdateBook.aspx?var=quantity"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="Delete" NavigateUrl="~/DeleteBook.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Search" NavigateUrl="~/SearchBook.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="ShowAll" NavigateUrl="~/ShowBooks.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Members">
+                                    <asp:MenuItem Text="New" NavigateUrl="~/NewMember.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Update" >
+                                    <asp:MenuItem Text="Name" NavigateUrl="~/UpdateMember.aspx?var=name"></asp:MenuItem>
+                                    <asp:MenuItem Text="Address" NavigateUrl="~/UpdateMember.aspx?var=address"></asp:MenuItem>
+                                    <asp:MenuItem Text="Phone" NavigateUrl="~/UpdateMember.aspx?var=phone"></asp:MenuItem>
+                                    <asp:MenuItem Text="Mobile" NavigateUrl="~/UpdateMember.aspx?var=mobile"></asp:MenuItem>
+                                    <asp:MenuItem Text="Email" NavigateUrl="~/UpdateMember.aspx?var=email"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="Delete" NavigateUrl="~/DeleteMember.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Search" NavigateUrl="~/SearchMember.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="ShowAll" NavigateUrl="~/ShowMembers.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Transactions">
+                                    <asp:MenuItem Text="New" NavigateUrl="~/NewTransaction.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="ShowAll" NavigateUrl="~/ShowTransactions.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr style="background-color: #dddddd; vertical-align: top; width: 25%;">
+                    <td>
+                        <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/adv.xml" Height="300px"
+                            Width="280px" />
+                    </td>
+                    <td rowspan="2" valign="top" style="width: 75%;">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr style="width: 25%;">
+                    <td style="color: #ffffff; background-color: #0077ff; font-weight: bold;">
+                        <marquee direction="up" scrolldelay="150" scrollamount="5" height="160px">
+             
+             <h4 style="text-align:center;"><u>Terms & Conditions</u></h4>
+             <ul >
+<li>Membership is not transferrable</li>
+<li>Security Fee 400Rs</li>
+<li>Monthly Fee 100Rs</li>
+<li>Fine will be charged @ 1Re /day after due date</li>
+<li>Books, if lost or damaged will be fined as per its price</li>
+<li>Late Fee will be charged @ 5 Re /day</li>
+</ul></marquee>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="width: 100%; height: 30px; background-color: #222222; color: #ffffff;
+            text-align: center;">
+            All Rights Reserved &copy; <a href='http://www.universalbooks.com'>Universal Books</a>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

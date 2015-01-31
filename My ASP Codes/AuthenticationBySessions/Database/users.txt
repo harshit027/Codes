@@ -1,0 +1,9 @@
+1%Harshit%harshit%MBBS%Padaetrics
+2%Amit%amit%BAMS%Orthopedist
+3%Anuj%anuj%MS%Gynaecologyst
+4%Nikhil%nikhil%MBBS%Opthalmologyst
+5%Basant%basant%MS%Cardiologyst
+6%Alok%alok%BAMS%Padaetrics
+7%Mohan%mohan%BAMS%Padaetrics
+8%Vikas%vikas%MS%Cardiologyst
+9%Aman%aman%BHMS%Padaetrics

@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Session Example</title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div >
+    <table width="100%" style="height:500px;" border="2" cellpadding="0">
+    <tr style="height:70px;">
+    <th colspan="2"><h2><u>Session Example</u></h2></th>
+    </tr>
+    <tr >
+    <td style="width:150px;" valign="top">
+    <ul>
+    <li><a href="Default.aspx">Default.aspx</a></li>
+    <li><a href="Default2.aspx">Defaul2.aspx</a></li>
+    <li><a href="Default3.aspx">Defaul3.aspx</a></li>
+    <li><a href="Default4.aspx">Defaul4.aspx</a></li>
+    </ul>
+    </td>
+    <td style="width:600px;" valign="top">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </td>
+    </tr>
+    </table>
+        
+    </div>
+    </form>
+</body>
+</html>

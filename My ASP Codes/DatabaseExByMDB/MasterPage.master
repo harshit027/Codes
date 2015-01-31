@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="width:100%; height:580px;" >
+    <div  style="width:100%; height:50px; background-color:#000000; color:#ffffff; text-align:center;">
+    <h3><u><br />Database Handling Using MS Access</u></h3>
+    </div>
+    <div style="width:100%; height:500px; background-color:#dddddd;">
+    <table width="100%" border="1" >
+    <tr >
+    <td valign="top" style="width:100%; height:30px; background-color:#00aaff;">
+    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="#F7F6F3" 
+            DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+            ForeColor="#7C6F57" StaticSubMenuIndent="10px">
+        <StaticSelectedStyle BackColor="#5D7B9D" />
+        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+        <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+        <DynamicMenuStyle BackColor="#F7F6F3" />
+        <DynamicSelectedStyle BackColor="#5D7B9D" />
+        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+        <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+    <Items>
+    <asp:MenuItem Text="Home" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+    <asp:MenuItem Text="Database" NavigateUrl="~/DataBase.aspx"></asp:MenuItem>
+    <asp:MenuItem Text="New Entry" NavigateUrl="~/NewEntry.aspx"></asp:MenuItem>
+    <asp:MenuItem Text="Update" NavigateUrl="~/Update.aspx"></asp:MenuItem>
+    <asp:MenuItem Text="Delete" NavigateUrl="~/Delete.aspx"></asp:MenuItem>
+    <asp:MenuItem Text="Search" NavigateUrl="~/Search.aspx"></asp:MenuItem>
+    </Items>
+    </asp:Menu>
+    </td>
+    </tr>
+    <tr >
+    <td valign="top" style="width:100%; height:470px; text-align:center ">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <div style="width:100%; height:30px; background-color:#000000; color:#ffffff; text-align:center;">
+    Courtesy : Harshit Tiwari
+    </div>
+        
+    </div>
+    </form>
+</body>
+</html>

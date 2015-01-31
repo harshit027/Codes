@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="Child.master.cs" Inherits="Child" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+<asp:LinkButton ID="LinkButton1" runat="server" Text="Menu1"></asp:LinkButton>
+<asp:LinkButton ID="LinkButton2" runat="server" Text="Menu2"></asp:LinkButton>
+<asp:LinkButton ID="LinkButton3" runat="server" Text="Menu3"></asp:LinkButton>
+<asp:LinkButton ID="LinkButton4" runat="server" Text="Menu4"></asp:LinkButton>
+</asp:Content>
+
+
+

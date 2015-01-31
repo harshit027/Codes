@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MYWEBSITE</title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+    <div style="width:100%;">
+    <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/adv.xml"  Height="200px" Width="100%"/>
+    </div>
+    <br /><br /><br /><br />
+    <div style="width:100%; height:500px; background-color:#dddddd; font-family:Verdana;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"> 
+        </asp:ContentPlaceHolder>
+    </div>
+  
+    </form>
+</body>
+</html>
