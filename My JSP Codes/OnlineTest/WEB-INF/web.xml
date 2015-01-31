@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="2.5"> 
+    <description>
+      PACE BUREAU - J@EE LEARNING
+    </description>
+    <display-name>June Batch, 2010</display-name>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/myerror.jsp</location>
+	</error-page>
+	<!-- SERVLET SETTINGS -->
+	<servlet>
+		<servlet-name>registration</servlet-name>
+		<servlet-class>onlineexam.RegisterStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registration</servlet-name>
+		<url-pattern>/registerstudent</url-pattern>
+	</servlet-mapping>
+	    
+	    <servlet>
+	    		<servlet-name>login</servlet-name>
+	    		<servlet-class>onlineexam.LoginCheck</servlet-class>
+	    	</servlet>
+	    	<servlet-mapping>
+	    		<servlet-name>login</servlet-name>
+	    		<url-pattern>/logincheck</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	            <servlet-name>sample</servlet-name>
+		    <servlet-class>onlineexam.SampleTest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		    <servlet-name>sample</servlet-name>
+		    <url-pattern>/sampletest</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		            <servlet-name>exitsample</servlet-name>
+			    <servlet-class>onlineexam.ExitSample</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			    <servlet-name>exitsample</servlet-name>
+			    <url-pattern>/exitsample</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>maintest</servlet-name>
+	    <servlet-class>onlineexam.MainTest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	     <servlet-name>maintest</servlet-name>
+	     <url-pattern>/maintest</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		    <servlet-name>endtest</servlet-name>
+		    <servlet-class>onlineexam.EndTest</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		     <servlet-name>endtest</servlet-name>
+		     <url-pattern>/endtest</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	   <servlet-name>submitanswers</servlet-name>
+	   <servlet-class>onlineexam.SubmitAnswers</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>submitanswers</servlet-name>
+	    <url-pattern>/submitanswers</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	  <servlet-name>showresult</servlet-name>
+	    <servlet-class>onlineexam.ShowResult</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	     <servlet-name>showresult</servlet-name>
+	     <url-pattern>/showresult</url-pattern>
+	</servlet-mapping>
+</web-app>
+ 

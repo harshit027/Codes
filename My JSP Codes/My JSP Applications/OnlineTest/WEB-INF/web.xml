@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="2.5"> 
+    <description>
+      PACE BUREAU - J@EE LEARNING
+    </description>
+    <display-name>June Batch, 2010</display-name>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/myerror.jsp</location>
+	</error-page>
+	<!-- SERVLET SETTINGS -->
+	<servlet>
+		<servlet-name>registration</servlet-name>
+		<servlet-class>onlineexam.RegisterStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registration</servlet-name>
+		<url-pattern>/registerstudent</url-pattern>
+	</servlet-mapping>
+	    
+</web-app>

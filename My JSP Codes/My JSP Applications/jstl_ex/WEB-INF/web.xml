@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   version="2.5"> 
+
+    <description>
+      Servlet and JSP Examples.
+    </description>
+    <display-name>Servlet and JSP Examples</display-name>
+
+    <jsp-config>
+        <taglib>
+	    <taglib-uri>
+	       http://localhost:8080/jstl_ex
+	    </taglib-uri>
+	    <taglib-location>
+	       /WEB-INF/mytags.tld
+	    </taglib-location>
+	</taglib>
+     </jsp-config>
+</web-app>

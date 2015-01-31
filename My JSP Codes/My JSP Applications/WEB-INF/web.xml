@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="2.5"> 
+    <description>
+      PACE BUREAU - J@EE LEARNING
+    </description>
+    <display-name>February Batch, 2010</display-name>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/first.jsp</location>
+	</error-page>
+	<servlet>
+		<servlet-name>myjspce</servlet-name>
+		<jsp-file>/config_ex.jsp</jsp-file>
+		<init-param>
+			<param-name>divbgc</param-name>
+			<param-value>#00ff00</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myjspce</servlet-name>
+		<url-pattern>/ce</url-pattern>
+	</servlet-mapping>
+	    
+	<!-- SERVLET SETTINGS -->
+	<servlet>
+		<servlet-name>myfirstservlet</servlet-name>
+		<servlet-class>myservlet_examples.FirstServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myfirstservlet</servlet-name>
+		<url-pattern>/newfs</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>gs</servlet-name>
+			<servlet-class>myservlet_examples.GenericServletExample</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>gs</servlet-name>
+			<url-pattern>/generic_servlet</url-pattern>
+	</servlet-mapping>
+</web-app>
