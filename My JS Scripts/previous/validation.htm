@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>My SARAL6 Javascript Example</title>
+		<meta name="author" content="rajneesh agrawal, jabalpur">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="cache-control" content="no-cache">
+		<script type='text/javascript'>
+		<!--
+			function Validate() {
+				if(form1.txtname.value=="") {
+					alert("Invalid Name");
+					form1.txtname.focus();
+					return;
+				}
+				if(form1.txtPassword.value=="") {
+					alert("Invalid Password");
+					form1.txtPassword.focus();
+					return;
+				}
+				if(form1.txtRetypePassword.value=="") {
+					alert("Invalid Password");
+					form1.txtRetypePassword.focus();
+					return;
+				}
+				if(form1.txtRetypePassword.value!=form1.txtPassword.value) {
+					alert("Password and Retype Password do not match");
+					form1.txtPassword.focus();
+					return;
+				}
+			}
+
+			function myf() {
+				form1.txtname.select();
+				//alert("Oye selection kar rahe ho");
+			}
+			-->
+		</script>
+		<noscript>
+			<b>Your browser do not support javascript</b>
+		</noscript>
+	</head>
+	<body >
+		<form name="form1">
+		<table cellpadding='2' cellspacing='0' border='1' bgcolor=lightblue width="80%" align="center">
+			<tr>
+				<td align='right'>User name </td>
+				<td><input type="text" name="txtname" onSelect="myf()" size=40>
+			</tr>
+			<tr>
+				<td align='right'>Password</td>
+				<td><input type="password" name="txtPassword" onclick="javascript:this.select();" size=40>
+			</tr>
+			<tr>
+				<td align='right'>Retype Password</td>
+				<td><input type="password" name="txtRetypePassword" size=40>
+			</tr>
+			<tr>
+				<td align='right'>Email Address</td>
+				<td><input type="text" name="txtEmail" size=40>
+			</tr>
+			<tr>
+				<td align='center' colspan="2"><input type="button" name="b1" onclick="Validate()" value="Done"></td>
+			</tr>
+	</body>
+</html>

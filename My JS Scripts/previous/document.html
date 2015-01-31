@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>My SARAL4 Javascript Example</title>
+		<script tyle='text/javascript'>
+			function showmenuhorizontal()
+			{
+				var obj1 = document.getElementById("div1");
+				var obj2 = document.getElementById("div2");
+				var obj3 = document.getElementById("div3");
+
+				obj2.innerHTML = obj3.outerHTML;
+				obj1.style.visibility="hidden";
+				obj1.style.display="none";
+				obj2.style.visibility="visible";
+				obj2.style.display="block";
+				//obj3.style.visibility="hidden";
+				//obj3.style.display="none";
+			}
+			function showmenuvertical()
+			{
+				var obj1 = document.getElementById("div1");
+				var obj2 = document.getElementById("div2");
+				var obj3 = document.getElementById("div3");
+				obj1.innerHTML = obj3.outerHTML;
+				obj1.style.visibility="visible";
+				obj1.style.display="block";
+ 				obj2.style.visibility="hidden";
+				obj2.style.display="none";
+				//obj3.style.visibility="hidden";
+				//obj3.style.display="none";
+			}
+		</script>
+	</head>
+	<body>
+		<div style="width:50px;" id='div1'>
+		</div>
+		<div style="width:100%;" id='div2'>
+		</div>
+		<div style="" id='div3'>
+			<a href="myfirst.htm">myfirst.htm</a>&nbsp;
+			<a href="mysecond.htm">mysecond.htm</a>&nbsp;
+			<a href="mythird1.htm">mythird1.htm</a>&nbsp;
+			<a href="registration.htm">registration.htm</a>&nbsp;
+			<a href="register.htm">register.htm</a>&nbsp;
+		</div>
+		<input type="button" name="b1" value="showmenuhorizontal" onclick="showmenuhorizontal()">&nbsp;
+		<input type="button" name="b1" value="showmenuvertical" onclick="showmenuvertical()">
+	</body>
+	<script language="javascript">
+		 showmenuhorizontal();
+	</script>
+</html>

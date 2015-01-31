@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>My Second Javascript Example</title>
+		<script language='javascript'>
+
+			var x=23;
+			var y=24;
+			function add() {
+				return x+y;
+			}
+			function sub() {
+				return x-y;
+			}
+			function mul() {
+				return x*y;
+			}
+			function div() {
+				return x/y;
+			}
+			function calc(oper) {
+				var obj = document.getElementById('scre');
+				switch(oper) {
+					case '+' :
+						obj.innerText=add();break;
+					case '-' :
+						obj.innerText=sub();break;
+					case '*' :
+						obj.innerText=mul();break;
+					case '/' :
+						obj.innerText=div();break;
+				}
+			}
+
+		</script>
+	</head>
+	<body>
+		<div id='scre' style='background-color:orange;width:50px'></div>
+		<input type='button' value='add' onclick="calc('+')">
+		<input type='button' value='sub' onclick="calc('-')">
+		<input type='button' value='mul' onclick="calc('*')">
+		<input type='button' value='div' onclick="calc('/')">
+	</body>
+</html>

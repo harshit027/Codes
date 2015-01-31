@@ -1,0 +1,262 @@
+<html>
+<head>
+<basefont face='verdana' size='4'>
+<script type='text/javascript' >
+
+function andFunction()
+{
+
+    var inp1=document.form1.input1.value;
+    var inp2=document.form1.input2.value;
+    if(inp1=="TRUE" && inp2=="TRUE")
+    document.form1.output.value='TRUE';
+    else
+    document.form1.output.value='FALSE';
+
+    var obj1=document.getElementById('btn1');
+    var obj2=document.getElementById('btn2');
+    var obj3=document.getElementById('btn3');
+    var obj4=document.getElementById('btn4');
+    var obj5=document.getElementById('btn5');
+    var obj6=document.getElementById('btn6');
+    var obj7=document.getElementById('btn7');
+
+    obj1.style.backgroundColor='yellow';
+    obj2.style.backgroundColor='white';
+    obj3.style.backgroundColor='white';
+    obj4.style.backgroundColor='white';
+    obj5.style.backgroundColor='white';
+    obj6.style.backgroundColor='white';
+    obj7.style.backgroundColor='white';
+
+
+}
+function orFunction()
+{
+
+    var inp1=document.form1.input1.value;
+    var inp2=document.form1.input2.value;
+    if(inp1=="FALSE" && inp2=="FALSE")
+    document.form1.output.value='FALSE';
+    else
+    document.form1.output.value='TRUE';
+
+    var obj1=document.getElementById('btn1');
+	    var obj2=document.getElementById('btn2');
+	    var obj3=document.getElementById('btn3');
+	    var obj4=document.getElementById('btn4');
+	    var obj5=document.getElementById('btn5');
+	    var obj6=document.getElementById('btn6');
+	    var obj7=document.getElementById('btn7');
+
+	    obj1.style.backgroundColor='white';
+	    obj2.style.backgroundColor='yellow';
+	    obj3.style.backgroundColor='white';
+	    obj4.style.backgroundColor='white';
+	    obj5.style.backgroundColor='white';
+	    obj6.style.backgroundColor='white';
+    obj7.style.backgroundColor='white';
+}
+
+function impliesFunction()
+{
+
+    var inp1=document.form1.input1.value;
+    var inp2=document.form1.input2.value;
+    if(inp1=="TRUE" && inp2=="FALSE")
+    document.form1.output.value='FALSE';
+    else
+    document.form1.output.value='TRUE';
+
+    var obj1=document.getElementById('btn1');
+	    var obj2=document.getElementById('btn2');
+	    var obj3=document.getElementById('btn3');
+	    var obj4=document.getElementById('btn4');
+	    var obj5=document.getElementById('btn5');
+	    var obj6=document.getElementById('btn6');
+	    var obj7=document.getElementById('btn7');
+
+	    obj1.style.backgroundColor='white';
+	    obj2.style.backgroundColor='white';
+	    obj3.style.backgroundColor='yellow';
+	    obj4.style.backgroundColor='white';
+	    obj5.style.backgroundColor='white';
+	    obj6.style.backgroundColor='white';
+    obj7.style.backgroundColor='white';
+}
+
+function iffFunction()
+{
+
+    var inp1=document.form1.input1.value;
+    var inp2=document.form1.input2.value;
+    if((inp1=="TRUE" && inp2=="TRUE") || (inp1=="FALSE" && inp2=="FALSE"))
+    document.form1.output.value='TRUE';
+    else
+    document.form1.output.value='FALSE';
+
+    var obj1=document.getElementById('btn1');
+	    var obj2=document.getElementById('btn2');
+	    var obj3=document.getElementById('btn3');
+	    var obj4=document.getElementById('btn4');
+	    var obj5=document.getElementById('btn5');
+	    var obj6=document.getElementById('btn6');
+	    var obj7=document.getElementById('btn7');
+
+	    obj1.style.backgroundColor='white';
+	    obj2.style.backgroundColor='white';
+	    obj3.style.backgroundColor='white';
+	    obj4.style.backgroundColor='yellow';
+	    obj5.style.backgroundColor='white';
+	    obj6.style.backgroundColor='white';
+    obj7.style.backgroundColor='white';
+}
+
+function xorFunction()
+{
+
+    var inp1=document.form1.input1.value;
+    var inp2=document.form1.input2.value;
+    if((inp1=="TRUE" && inp2=="TRUE") || (inp1=="FALSE" && inp2=="FALSE"))
+    document.form1.output.value='FALSE';
+    else
+    document.form1.output.value='TRUE';
+
+    var obj1=document.getElementById('btn1');
+	    var obj2=document.getElementById('btn2');
+	    var obj3=document.getElementById('btn3');
+	    var obj4=document.getElementById('btn4');
+	    var obj5=document.getElementById('btn5');
+	    var obj6=document.getElementById('btn6');
+	    var obj7=document.getElementById('btn7');
+
+	    obj1.style.backgroundColor='white';
+	    obj2.style.backgroundColor='white';
+	    obj3.style.backgroundColor='white';
+	    obj4.style.backgroundColor='white';
+	    obj5.style.backgroundColor='yellow';
+	    obj6.style.backgroundColor='white';
+    obj7.style.backgroundColor='white';
+}
+
+function nandFunction()
+{
+
+    var inp1=document.form1.input1.value;
+    var inp2=document.form1.input2.value;
+    if(inp1=="TRUE" && inp2=="TRUE" )
+    document.form1.output.value='FALSE';
+    else
+    document.form1.output.value='TRUE';
+
+    var obj1=document.getElementById('btn1');
+	    var obj2=document.getElementById('btn2');
+	    var obj3=document.getElementById('btn3');
+	    var obj4=document.getElementById('btn4');
+	    var obj5=document.getElementById('btn5');
+	    var obj6=document.getElementById('btn6');
+	    var obj7=document.getElementById('btn7');
+
+	    obj1.style.backgroundColor='white';
+	    obj2.style.backgroundColor='white';
+	    obj3.style.backgroundColor='white';
+	    obj4.style.backgroundColor='white';
+	    obj5.style.backgroundColor='white';
+	    obj6.style.backgroundColor='yellow';
+    obj7.style.backgroundColor='white';
+}
+
+function norFunction()
+{
+
+    var inp1=document.form1.input1.value;
+    var inp2=document.form1.input2.value;
+    if(inp1=="FALSE" && inp2=="FALSE" )
+    document.form1.output.value='TRUE';
+    else
+    document.form1.output.value='FALSE';
+
+    var obj1=document.getElementById('btn1');
+	    var obj2=document.getElementById('btn2');
+	    var obj3=document.getElementById('btn3');
+	    var obj4=document.getElementById('btn4');
+	    var obj5=document.getElementById('btn5');
+	    var obj6=document.getElementById('btn6');
+	    var obj7=document.getElementById('btn7');
+
+	    obj1.style.backgroundColor='white';
+	    obj2.style.backgroundColor='white';
+	    obj3.style.backgroundColor='white';
+	    obj4.style.backgroundColor='white';
+	    obj5.style.backgroundColor='white';
+	    obj6.style.backgroundColor='white';
+    obj7.style.backgroundColor='yellow';
+}
+
+</script>
+</head>
+<body >
+<form name='form1' >
+<table border='2' cellpadding='5' cellspacing='0' width='600px' style='background-color:#dddddd; color:#000000; font-family:verdana;' align='center'>
+<tr style='background-color:pink;'>
+<th colspan='2'>Logic Gates Simulator</th>
+</tr>
+<tr>
+<td>1st Input (A)</td>
+<td>
+<select name='input1'>
+<option>TRUE</option>
+<option>FALSE</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>2nd Input (B)</td>
+<td>
+<select name='input2'>
+<option>TRUE</option>
+<option>FALSE</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Output</td>
+<td><input type='text' name='output' readonly style='background-color:#000000; color:white;font-weight:bold; width:60px;'></td>
+</tr>
+<tr style='background-color:pink;'>
+<th colspan='2'>Connectives</th>
+</td>
+</tr>
+<tr>
+<td>Conjucntion (A /\ B)</td>
+<td><input type='button' id='btn1' name='and' value='AND' onclick='andFunction()'></td>
+</tr>
+<tr>
+<td>Inclusive Disjunction (A \/ B)</td>
+<td><input type='button' id='btn2' name='or' value='OR' onclick='orFunction()'></td>
+</tr>
+
+<tr>
+<td>Material Conditional(A --&gt B)</td>
+<td><input type='button' id='btn3' name='implies' value='IMPLIES' onclick='impliesFunction()'></td>
+</tr>
+<tr>
+<td>Material Biconditional (A &lt--&gt B)</td>
+<td><input type='button' id='btn4' name='iff' value='IFF' onclick='iffFunction()'></td>
+</tr>
+<tr>
+<td>Exclusive Disjunction (A + B)</td>
+<td><input type='button' id='btn5' name='xor' value='XOR' onclick='xorFunction()'></td>
+</tr>
+<tr>
+<td>Joint Denial (A | B)</td>
+<td><input type='button' id='btn6' name='nand' value='NAND' onclick='nandFunction()'></td>
+</tr>
+<tr>
+<td>Disjoint Denial (A \|/ B)</td>
+<td><input type='button' id='btn7' name='nor' value='NOR' onclick='norFunction()'></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

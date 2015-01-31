@@ -1,0 +1,44 @@
+<html>
+<script type='text/javascript'>
+var tid;
+var currentMinutes=2;
+var currentSeconds=0;
+var tid;
+function startTimer()
+{
+   tid=window.setInterval("updateTime()",1000);
+}
+
+function stopTimer()
+{
+   window.clearInterval(tid);
+}
+
+function updateTime()
+{
+    if(currentSeconds==0)
+    {
+       currentSeconds=60;
+       currentMinutes--;
+     }
+    currentSeconds--;
+
+    div1.innerHTML='Time Left :- '+currentMinutes+' : '+currentSeconds;
+    if(currentSeconds==0 && currentMinutes==0)
+    {
+       stopTimer();
+       alert('Time over');
+    }
+}
+</script>
+<head>
+</head>
+<body>
+<div id='div1'>
+</div>
+<div>
+<input type='button' value='Start' onclick='startTimer()'>
+<input type='button' value='Stop' onclick='stopTimer()'>
+</div>
+</body>
+</html>

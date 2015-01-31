@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type='text/javascript'>
+function SetColor()
+{
+if(document.form1.option[0].checked)
+form1.tb1.style.backgroundColor=document.form1.option[0].value+'';
+if(document.form1.option[1].checked)
+form1.tb1.style.backgroundColor=document.form1.option[1].value+'';
+if(document.form1.option[2].checked)
+form1.tb1.style.backgroundColor=document.form1.option[2].value+'';
+if(document.form1.option[3].checked)
+form1.tb1.style.backgroundColor=document.form1.option[3].value+'';
+}
+</script>
+</head>
+<body>
+<form name="form1" method="post">
+Choose an option .<br />
+<input type="radio" id="option" name="option" value="red" >Red<br>
+<input type="radio" id="option" name="option" value="yellow">Yellow<br>
+<input type="radio" id="option" name="option" value="green">Green<br>
+<input type="radio" id="option" name="option" value="blue">Blue<br><br>
+<input type="button" id="btn1" value="SetColor" onClick="SetColor()">
+&nbsp;&nbsp;&nbsp;
+<input type="text" name="tb1" id="tb1">
+</form>
+</body>
+</html>

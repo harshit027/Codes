@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type='text/javascript'>
+
+var tid;
+var x=20;
+var y=100;
+
+function startTimer()
+{
+     window.clearInterval(tid);
+     tid=window.setInterval("moveImage()",100);
+}
+var flag=0;
+function moveImage()
+{
+      var image=document.getElementById("image1");
+      if(flag==0)
+      {
+          x+=10;
+
+          image.hspace=x;
+          image.vspace=y;
+
+          if(x>500)
+          {
+               flag=1;
+          }
+      }
+       if(flag==1)
+      {
+          x-=10;
+
+          image.hspace=x;
+          image.vspace=y;
+
+          if(x<20)
+          {
+              flag=0;
+          }
+       }
+}
+function stopTimer()
+{
+   window.clearInterval(tid);
+}
+
+
+
+</script>
+</head>
+<body>
+<img id='image1' src='images/1.jpg' border='1' onmouseover='stopTimer()' onmouseout='startTimer()'  hspace='20' vspace='100'><br><br>
+
+</body>

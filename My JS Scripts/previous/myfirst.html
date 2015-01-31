@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>My First Javascript Example</title>
+		<script language='javascript'>
+			alert("Welcome user");
+			function myf() {
+				document.bgColor='green';
+			}
+			function myf1(arg) {
+				var obj = document.getElementById('pb');
+				obj.style.backgroundColor=arg;
+			}
+			function myf2(obj,arg) {
+				obj.style.backgroundColor=arg;
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id='pb' onclick='myf()' style='cursor:hand'>PACE BUREAU</h1>
+		this is pace bureau.
+		<h1 onclick="myf1('red')" onmouseover="myf2(this,'red')" onmouseout="myf2(this,'white')" style='cursor:hand'>Red</h1>
+		<h1 onclick="myf1('green')" onmouseover="myf2(this,'green')" onmouseout="myf2(this,'white')"  style='cursor:hand'>Green</h1>
+		<h1 onclick="myf1('blue')" onmouseover="myf2(this,'blue')" onmouseout="myf2(this,'white')"  style='cursor:hand'>Blue</h1>
+		<h1 onclick="myf1('yellow')" onmouseover="myf2(this,'yellow')" onmouseout="myf2(this,'white')"  style='cursor:hand'>Yellow</h1>
+		<h1 onclick="myf1('magenta')" onmouseover="myf2(this,'magenta')" onmouseout="myf2(this,'white')"  style='cursor:hand'>Magenta</h1>
+		<input type='button' onclick="myf1('magenta')" onmouseover="myf2(this,'magenta')" onmouseout="myf2(this,'white')" value='JABALPUR' >
+		<input type='button' onclick="myf1('magenta')" onmouseover="javascript:this.style.backgroundColor='orange';" onmouseout="javascript:this.style.backgroundColor='gray';" value='JABALPUR' >
+	</body>
+</html>

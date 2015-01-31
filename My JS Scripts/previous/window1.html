@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>My SARAL3 Javascript Example</title>
+		<link href='register.css' rel='stylesheet'>
+		<script tyle='text/javascript'>
+			var wobj;
+			function OpenWindow() {
+				wobj = window.open('registration.html', '', 'height=200,width=200,resizable=no');
+			}
+			function CloseWindow() {
+				if(window.confirm("Are you sure want to close child window?")) {
+					wobj.close();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type='button' value='Open New Window' onClick='OpenWindow()'><br>
+		<input type='button' value='Close New Window' onClick='CloseWindow()'><br>
+	</body>
+</html>

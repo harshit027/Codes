@@ -1,0 +1,192 @@
+<html>
+<head>
+<basefont face='verdana' size='4'>
+<script type='text/javascript' >
+
+function addition()
+{
+     if(document.form1.tb1.value=="" || document.form1.tb2.value=="")
+	      {
+	         alert("Please Enter Values !");
+	      }
+	      else
+	      {
+	           var fn=document.form1.tb1.value;
+	           var sn=document.form1.tb2.value;
+	           fn=parseInt(fn);
+	           sn=parseInt(sn);
+	           document.form1.tb3.value=(fn+sn)+"";
+
+
+               var objadd=document.getElementById('addBtn');
+			   var objsub=document.getElementById('subBtn');
+			   var objmul=document.getElementById('mulBtn');
+			   var objdiv=document.getElementById('divBtn');
+               var objmod=document.getElementById('modBtn');
+
+	           objadd.style.backgroundColor='yellow';
+	           objsub.style.backgroundColor='white';
+	           objmul.style.backgroundColor='white';
+	           objdiv.style.backgroundColor='white';
+	           objmod.style.backgroundColor='white';
+
+           }
+}
+function subtraction()
+{
+     if(document.form1.tb1.value=="" || document.form1.tb2.value=="")
+    {
+       alert("Please Enter Values !");
+    }
+   else
+   {
+       var fn=document.form1.tb1.value;
+       var sn=document.form1.tb2.value;
+        fn=parseInt(fn);
+        sn=parseInt(sn);
+        document.form1.tb3.value=(fn-sn)+"";
+
+        var objadd=document.getElementById('addBtn');
+		var objsub=document.getElementById('subBtn');
+		var objmul=document.getElementById('mulBtn');
+		var objdiv=document.getElementById('divBtn');
+        var objmod=document.getElementById('modBtn');
+
+        objadd.style.backgroundColor='white';
+	    objsub.style.backgroundColor='yellow';
+	    objmul.style.backgroundColor='white';
+		objdiv.style.backgroundColor='white';
+	    objmod.style.backgroundColor='white';
+
+
+    }
+}
+function multiplication()
+{
+     if(document.form1.tb1.value=="" || document.form1.tb2.value=="")
+     {
+	     alert("Please Enter Values !");
+     }
+     else
+	 {
+         var fn=document.form1.tb1.value;
+         var sn=document.form1.tb2.value;
+	     fn=parseInt(fn);
+	     sn=parseInt(sn);
+	     document.form1.tb3.value=(fn*sn)+"";
+
+	     var objadd=document.getElementById('addBtn');
+		 var objsub=document.getElementById('subBtn');
+		 var objmul=document.getElementById('mulBtn');
+		 var objdiv=document.getElementById('divBtn');
+         var objmod=document.getElementById('modBtn');
+
+	     objadd.style.backgroundColor='white';
+		 objsub.style.backgroundColor='white';
+		 objmul.style.backgroundColor='yellow';
+		 objdiv.style.backgroundColor='white';
+	     objmod.style.backgroundColor='white';
+
+
+      }
+}
+function division()
+{
+
+     if(document.form1.tb1.value=="" || document.form1.tb2.value=="")
+     {
+        alert("Please Enter Values !");
+     }
+     else
+     {
+          var fn=document.form1.tb1.value;
+          var sn=document.form1.tb2.value;
+          fn=parseInt(fn);
+          sn=parseInt(sn);
+          document.form1.tb3.value=(fn/sn)+"";
+
+          var objadd=document.getElementById('addBtn');
+		  var objsub=document.getElementById('subBtn');
+		  var objmul=document.getElementById('mulBtn');
+		  var objdiv=document.getElementById('divBtn');
+          var objmod=document.getElementById('modBtn');
+
+          objadd.style.backgroundColor='white';
+		  objsub.style.backgroundColor='white';
+		  objmul.style.backgroundColor='white';
+		  objdiv.style.backgroundColor='yellow';
+		  objmod.style.backgroundColor='white';
+
+
+
+      }
+}
+
+function modulus()
+{
+     if(document.form1.tb1.value=="" || document.form1.tb2.value=="")
+	      {
+	         alert("Please Enter Values !");
+	      }
+	      else
+	      {
+	           var fn=document.form1.tb1.value;
+	           var sn=document.form1.tb2.value;
+	           fn=parseInt(fn);
+	           sn=parseInt(sn);
+	           document.form1.tb3.value=(fn%sn)+"";
+
+	           var objadd=document.getElementById('addBtn');
+			   var objsub=document.getElementById('subBtn');
+			   var objmul=document.getElementById('mulBtn');
+			   var objdiv=document.getElementById('divBtn');
+               var objmod=document.getElementById('modBtn');
+
+	           objadd.style.backgroundColor='white';
+		       objsub.style.backgroundColor='white';
+			   objmul.style.backgroundColor='white';
+			   objdiv.style.backgroundColor='white';
+			   objmod.style.backgroundColor='yellow';
+
+
+           }
+}
+</script>
+</head>
+<body >
+<form name='form1' >
+<table border='2' cellpadding='5' cellspacing='0' width='400px' style='background-color:purple; color:white; font-family:verdana;' align='center'>
+<tr style=' color:white;'>
+<th colspan=2>Calculator</th>
+</tr>
+<tr>
+<td >First Number</td>
+<td ><input type='text' name='tb1'></td>
+</tr>
+
+<tr>
+<td >Second Number</td>
+<td ><input type='text' name='tb2'></td>
+</tr>
+
+<tr>
+<td >Result</td>
+<td ><input type='text' name='tb3' readonly style='background-color:yellow;'></td>
+</tr>
+
+<tr align='center'>
+<td colspan='2'><br><br>
+<input type='button' id='addBtn' value='Plus' onclick='addition()' style='background-color:white;'>&nbsp;&nbsp;
+<input type='button' id='subBtn' value='Minus' onclick='subtraction()' style='background-color:white;'>&nbsp;&nbsp;
+<input type='button' id='mulBtn' value='Multiply' onclick='multiplication()' style='background-color:white;'>&nbsp;&nbsp;
+<input type='button' id='divBtn' value='Divide' onclick='division()' style='background-color:white;'>&nbsp;&nbsp;
+<input type='button' id='modBtn' value='Mod' onclick='modulus()' style='background-color:white;'>
+</td>
+</tr>
+<tr align='center'>
+<td colspan='2'>Courtesy : Harshit Tiwari</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

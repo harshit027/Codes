@@ -1,0 +1,44 @@
+<html>
+<head>
+<basefont face='verdana' size='4'>
+<script type='text/javascript' >
+var x=500;
+var y=500;
+resizeTo(500,500);
+var flag=1;
+function resizeWindow()
+{
+
+
+    if(flag==1)
+    {
+        x+=10;
+        y+=10;
+        resizeTo(x,y);
+        if(x==700)
+        {
+            flag=0;
+            alert("Maximum size reached : (700,700)");
+        }
+    }
+    else if(flag==0)
+    {
+        x-=10;
+        y-=10;
+        resizeTo(x,y);
+        if(x==300)
+        {
+            flag=1;
+            alert("Minimum size reached : (300,300)");
+        }
+    }
+}
+
+</script>
+</head>
+<body  >
+<form name='form1'>
+<input type='button' id='btn1' value='Resize' onclick='resizeWindow()'>
+</form>
+</body>
+</html>

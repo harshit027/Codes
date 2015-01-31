@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>My SARAL3 Javascript Example</title>
+		<script tyle='text/javascript'>
+			var tid;
+			var colorid=0;
+			function starttimer() {
+				tid=window.setInterval('setcolor()',500);
+			}
+			function setcolor () {
+				switch(colorid) {
+					case 0 :
+						document.bgColor='red';break;
+					case 1 :
+						document.bgColor='Green';break;
+					case 2 :
+						document.bgColor='Blue';break;
+					case 3 :
+						document.bgColor='Yellow';break;
+					case 4 :
+						document.bgColor='Cyan';break;
+					case 5 :
+						document.bgColor='Magenta';break;
+					case 6 :
+						document.bgColor='Black';break;
+					case 7 :
+						document.bgColor='white';break;
+				}
+				colorid++;
+				if(colorid>7)colorid=0;
+			}
+			function stoptimer() {
+				window.clearInterval(tid);
+			}
+			function DisplayText() {
+				var obj=document.getElementById('mytext');
+				var text=window.prompt("Enter Your Name", "Rajneesh");
+				obj.innerHTML="<h1>"+text+"</h1>";
+				obj.style.position='absolute';
+				obj.style.left=200;
+				obj.style.top = 200;
+			}
+			var actualtext='';
+			var temptext='                                                                              ';
+			function DisplayOnStatus() {
+				//actualtext=temptext+window.prompt("Enter Your Name", "Rajneesh");
+				actualtext=temptext+document.title;
+				window.status=actualtext;
+				window.setInterval('showstatus()',50);
+			}
+			function showstatus() {
+				//alert(actualtext.length());
+				txt=actualtext.charAt(actualtext.length-1);
+				txt=txt+actualtext.substring(0,actualtext.length-1);
+				window.status=txt;
+				actualtext=txt;
+			}
+			function MoveWindow() {
+				window.setInterval("StartMove()",1000);
+			}
+			x=10;
+			y=10;
+			function StartMove() {
+				window.moveBy(x,y);
+				x+=10;
+				y+=2;
+			}
+		</script>
+	</head>
+	<body onload='starttimer()'>
+		<input type='button' name='b1' value='displaytext' onClick='DisplayText()'>
+		<input type='button' name='b1' value='show on status' onClick='DisplayOnStatus()'>
+		<input type='button' name='b1' value='MoveWindow' onClick='MoveWindow()'>
+		<div id='mytext'></div>
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<title>My SARAL5 Javascript Example</title>
+		<script tyle='text/javascript'>
+			function ShowSubMenu(submenuid) {
+				HideSubMenu() ;
+				var obj = document.getElementById(submenuid);
+				obj.style.visiblity="visible";
+				obj.style.display="block";
+			}
+			function HideSubMenu() {
+				var obj = document.getElementById("myid1");
+				obj.style.visiblity="hidden";
+				obj.style.display="none";
+				var obj1 = document.getElementById("myid2");
+				obj1.style.visiblity="hidden";
+				obj1.style.display="none";
+			}
+		</script>
+	</head>
+	<body onLoad="HideSubMenu();" >
+		<table cellpadding='2' cellspacing='0' border='1' bgcolor=lightgreen>
+			<tr onClick="ShowSubMenu('myid1');" onMouseOver="javascript:this.style.cursor='hand';ShowSubMenu('myid1');" onMouseOut="javascript:this.style.cursor='default';">
+				<th>Main Menu1</th>
+			</tr>
+			<tr id='myid1'>
+				<td>
+					<table  cellpadding='2' cellspacing='0' border='1' bgcolor=lightblue>
+						<tr>
+							<td>Sub menu11</td>
+						</tr>
+						<tr>
+							<td>Sub menu12</td>
+						</tr>
+						<tr>
+							<td>Sub menu13</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr onClick="ShowSubMenu('myid2');" onMouseOver="javascript:this.style.cursor='hand';ShowSubMenu('myid2');" onMouseOut="javascript:this.style.cursor='default';">
+				<th>Main Menu2</th>
+			</tr>
+			<tr id='myid2'>
+				<td>
+					<table  cellpadding='2' cellspacing='0' border='1' bgcolor=lightblue>
+						<tr>
+							<td>Sub menu21</td>
+						</tr>
+						<tr>
+							<td>Sub menu22</td>
+						</tr>
+						<tr>
+							<td>Sub menu23</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+	<!-- horizontal menus -->
+		<br><br>
+		<table cellpadding='2' cellspacing='0' border='1' bgcolor=lightgreen>
+			<tr>
+				<th onClick="ShowSubMenu('myid3');" onMouseOver="javascript:this.style.cursor='hand';" onMouseOut="javascript:this.style.cursor='default';">Main Menu3</th>
+				<th onClick="ShowSubMenu('myid4');" onMouseOver="javascript:this.style.cursor='hand';" onMouseOut="javascript:this.style.cursor='default';">Main Menu4</th>
+			</tr>
+			<tr>
+				<td id='myid3'>
+					<table  cellpadding='2' cellspacing='0' border='1' bgcolor=lightblue>
+						<tr>
+							<td>Sub menu11</td>
+						</tr>
+						<tr>
+							<td>Sub menu12</td>
+						</tr>
+						<tr>
+							<td>Sub menu13</td>
+						</tr>
+					</table>
+				</td>
+				<td id="myid4">
+					<table  cellpadding='2' cellspacing='0' border='1' bgcolor=lightblue>
+						<tr>
+							<td>Sub menu21</td>
+						</tr>
+						<tr>
+							<td>Sub menu22</td>
+						</tr>
+						<tr>
+							<td>Sub menu23</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

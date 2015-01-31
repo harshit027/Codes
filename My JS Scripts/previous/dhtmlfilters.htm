@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>My SARAL6 Javascript Example</title>
+		<script tyle='text/javascript'>
+			function ApplyFilter(id) {
+				var obj = document.getElementById("mydiv");
+				switch(id) {
+					case 1:
+						obj.style.filter="alpha(opacity=20,enabled=1)";
+						break;
+				}
+			}
+		</script>
+	</head>
+	<body >
+		<form name="form1">
+		<table cellpadding='2' cellspacing='0' border='1' bgcolor=lightblue width="80%" align="center">
+			<tr>
+				<td onclick="ApplyFilter(1)" >
+					Alpha
+				</td>
+			</tr>
+			<tr>
+				<td >
+					Blur
+				</td>
+			</tr>
+			<tr>
+				<td >
+					Chroma
+				</td>
+			</tr>
+			<tr>
+				<td >
+					Dropshadow
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Flip Horizontal
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Flip Vertical
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Invert
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Glow
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Gray
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Mask
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Shadow
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Wave
+				</td>
+			</tr>
+			<tr>
+				<td>
+					X-ray
+				</td>
+			</tr>
+		</table>
+		<div id="mydiv" style="position:absolute; left:300; top:50">
+			<h1>PACE BUREAU</h1>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<title>My SARAL2 Javascript Example</title>
+		<link href='register.css' rel='stylesheet'>
+		<script tyle='text/javascript'>
+			function validate() {
+				if(form1.txtname.value=="") {
+					alert("Enter Name");
+					form1.txtname.focus();
+					form1.txtname.className='txtselectstyle';
+					return;
+				}
+				else {
+					form1.txtname.className='txtselectstyle';
+				}
+				if(form1.pass1.value=="") {
+					alert("Enter Password");
+					form1.pass1.focus();
+					form1.pass1.className='txtselectstyle';
+					return;
+				}
+				else {
+					form1.pass1.className='txtselectstyle';
+				}
+				if(form1.pass2.value=="") {
+					alert("Enter Retype Password");
+					form1.pass2.focus();
+					form1.pass2.className='txtselectstyle';
+					return;
+				}
+				else {
+					form1.pass2.className='txtselectstyle';
+				}
+				if(form1.pass2.value!=form1.pass1.value) {
+					alert("Password & Retype Password Do not match");
+					form1.pass1.focus();
+					form1.pass1.className='txtselectstyle';
+					form1.pass2.className='txtselectstyle';
+					return;
+				}
+				else {
+					form1.pass1.className='txtselectstyle';
+					form1.pass2.className='txtselectstyle';
+				}
+				form1.action='';
+				form1.submit();
+			}
+		</script>
+	</head>
+	<body>
+		<form name='form1' method='get' action=''>
+			<table class='tblstyle' cellpadding='2' cellspacing='0' border='0' align='center' width='80%'>
+				<tr>
+					<th colspan='2'>REGISTRATION FORM</th>
+				</tr>
+				<tr>
+					<td align='right'>Your Name</td>
+					<td><input name='txtname' type='text' value='' class='txtstyle'></td>
+				</tr>
+				<tr>
+					<td align='right'>Email Address</td>
+					<td><input type='text' value='' class='txtstyle'></td>
+				</tr>
+				<tr>
+					<td align='right'>Password</td>
+					<td><input name='pass1' type='password' value='' class='txtstyle'></td>
+				</tr>
+				<tr>
+					<td align='right'>Retype Password</td>
+					<td><input name='pass2' type='password' value='' class='txtstyle'></td>
+				</tr>
+				<tr>
+					<td align='right'>Address</td>
+					<td><textarea style='txtstyle'></textarea></td>
+				</tr>
+				<tr>
+					<td align='right'>Gender</td>
+					<td>
+						<input name='radiogender' type='Radio' value='M' class='txtstyle'>Male<br>
+						<input name='radiogender' type='Radio' value='F' class='txtstyle'>Female
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>Qualification</td>
+					<td>
+						<select style='txtstyle'>
+							<option value='M.Tech.'>M.Tech.</option>
+							<option value='MCA'>MCA</option>
+							<option value='B.Tech.'>B.Tech.</option>
+							<option value='B.E.'>B.E.</option>
+							<option value='B.Com.'>B.Com.</option>
+							<option value='B.Sc.'>B.Sc.</option>
+							<option value='B.C.A.'>B.C.A.</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>Hobbies</td>
+					<td>
+						<input type='checkbox' value='driving'>Driving<br>
+						<input type='checkbox' value='Reading'>Reading<br>
+						<input type='checkbox' value='Music'>Music<br>
+						<input type='checkbox' value='Dance'>Dance<br>
+					</td>
+				</tr>
+				<tr>
+					<td align='center' colspan='2'>
+						<input type='button' value='Done' class='txtstyle' onClick='validate()'>
+						<input type='Reset' value='Reset' class='txtstyle'>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

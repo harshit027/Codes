@@ -1,0 +1,19 @@
+.tblstyle
+{
+	background-color:darkgreen;
+	color:white;
+	font-family:'verdana';
+	font-size:small;
+}
+
+.txtstyle {
+	background-color:navy;
+	color:white;
+	size:30;
+}
+
+.txtselectstyle {
+	background-color:white;
+	color:navy;
+	size:30;	
+}
