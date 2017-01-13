@@ -1,0 +1,3 @@
+Dependencies:
+junit.jar
+hamcrest-all-1.3.jar
